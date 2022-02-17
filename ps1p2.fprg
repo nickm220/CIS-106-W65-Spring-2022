@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 08:29:22 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMTY7MDg6MTc6MjggUE07Mjg2Mw=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMTY7MDg6Mjk6MjIgUE07MTsyOTY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="score1" type="Real" array="False" size=""/>
+            <declare name="score2" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter student last name&quot;" newline="True"/>
+            <input variable="lname"/>
+            <output expression="&quot;Exam score 1&quot;" newline="True"/>
+            <input variable="score1"/>
+            <output expression="&quot;Exam score 2&quot;" newline="True"/>
+            <input variable="score2"/>
+            <assign variable="avg" expression="(score1 + score2)/2"/>
+            <output expression="lname &amp; &quot; has an average of &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
