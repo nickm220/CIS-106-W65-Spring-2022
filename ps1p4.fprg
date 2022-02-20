@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 11:08:23 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMTY7MTE6MDE6MjkgUE07Mjg1MQ=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMTY7MTE6MDg6MjMgUE07MTsyOTYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="meal" type="Real" array="False" size=""/>
+            <declare name="tip" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of meal&quot;" newline="True"/>
+            <input variable="meal"/>
+            <assign variable="tip" expression="meal * .15"/>
+            <output expression="&quot;The tip is &quot; &amp; tip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
