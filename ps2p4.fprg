@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-22 08:25:01 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjE7MDQ6NDc6NDIgUE07Mjg1NA=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjI7MDg6MjU6MDEgUE07MjsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="credits" type="Real" array="False" size=""/>
+            <declare name="tuition" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name&quot;" newline="True"/>
+            <input variable="lname"/>
+            <output expression="&quot;Enter credits taken&quot;" newline="True"/>
+            <input variable="credits"/>
+            <assign variable="tuition" expression="credits*250+100"/>
+            <output expression="lname &amp; &quot; tuition cost is &quot; &amp; tuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

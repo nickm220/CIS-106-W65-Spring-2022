@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-21 04:53:44 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjE7MDQ6NDc6NDIgUE07Mjg1NA=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjE7MDQ6NTM6NDQgUE07MTsyOTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name&quot;" newline="True"/>
+            <input variable="lname"/>
+            <output expression="&quot;Enter number of hours&quot;" newline="True"/>
+            <input variable="hours"/>
+            <output expression="&quot;Enter pay rate&quot;" newline="True"/>
+            <input variable="pay"/>
+            <assign variable="gross" expression="hours*pay"/>
+            <output expression="lname &amp; &quot; has a gross pay of &quot; &amp; gross" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

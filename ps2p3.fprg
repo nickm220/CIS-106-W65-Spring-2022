@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-22 04:07:27 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjI7MDM6NTg6MzIgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjI7MDQ6MDc6MjcgUE07MTsyOTYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="circumference" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter length&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;Enter width&quot;" newline="True"/>
+            <input variable="width"/>
+            <assign variable="area" expression="length*width"/>
+            <assign variable="circumference" expression="2*length + 2*width"/>
+            <output expression="&quot;The area is &quot; &amp; area" newline="True"/>
+            <output expression="&quot;The circumference is &quot; &amp; circumference" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

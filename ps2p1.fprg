@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-21 04:44:56 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjE7MDQ6Mzk6MzggUE07Mjg2MA=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDItMjE7MDQ6NDQ6NTYgUE07MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="extended" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter quantity&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <output expression="&quot;Enter price per unit&quot;" newline="True"/>
+            <input variable="price"/>
+            <assign variable="Extended" expression="quantity * price"/>
+            <output expression="&quot;Extended Price is &quot; &amp; extended" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
