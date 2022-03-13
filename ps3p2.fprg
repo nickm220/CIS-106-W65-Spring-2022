@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-06 01:19:02 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMDE7MTA6NTE6MjkgUE07Mjg1MA=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMDY7MDE6MTk6MDIgUE07MjsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="unitp" type="Real" array="False" size=""/>
+            <declare name="extended" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter an item&quot;" newline="True"/>
+            <input variable="item"/>
+            <output expression="&quot;Enter quantity&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="item = &quot;a&quot;">
+                <then>
+                    <assign variable="unitp" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="unitp" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="extended" expression="quantity * unitp"/>
+            <output expression="&quot;The item is &quot; &amp; item" newline="True"/>
+            <output expression="&quot;The unit price is &quot; &amp; unitp" newline="True"/>
+            <output expression="&quot;The extended price is &quot; &amp; extended" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

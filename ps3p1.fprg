@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-01 10:49:49 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMDE7MTA6NDE6NTkgUE07Mjg1Mg=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMDE7MTA6NDk6NDkgUE07MTsyOTY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="unitp" type="Real" array="False" size=""/>
+            <declare name="extended" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter quantity of item&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="quantity &gt;= 1000">
+                <then>
+                    <assign variable="unitp" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="unitp" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="extended" expression="quantity * unitp"/>
+            <assign variable="tax" expression="extended * 0.07"/>
+            <assign variable="total" expression="extended + tax"/>
+            <output expression="&quot;The quantity is &quot; &amp; quantity" newline="True"/>
+            <output expression="&quot;The unit price is &quot; &amp; unitp" newline="True"/>
+            <output expression="&quot;The extended price is &quot; &amp; extended" newline="True"/>
+            <output expression="&quot;The tax is &quot; &amp; tax" newline="True"/>
+            <output expression="&quot;The total is &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
