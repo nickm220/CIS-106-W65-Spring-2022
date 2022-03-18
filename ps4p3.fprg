@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-18 03:27:52 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMTg7MDI6NTI6MDYgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMTg7MDM6Mjc6NTIgUE07MTsyOTY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prin" type="Real" array="False" size=""/>
+            <declare name="matur" type="Real" array="False" size=""/>
+            <declare name="intrate" type="Real" array="False" size=""/>
+            <declare name="frstint" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter principle amount&quot;" newline="True"/>
+            <input variable="prin"/>
+            <output expression="&quot;Enter year to maturity&quot;" newline="True"/>
+            <input variable="matur"/>
+            <if expression="prin &gt; 100000 and matur = 5">
+                <then>
+                    <assign variable="intrate" expression="0.06"/>
+                </then>
+                <else>
+                    <if expression="prin &gt;= 50000 and prin &lt;= 100000 and matur = 10">
+                        <then>
+                            <assign variable="intrate" expression="0.05"/>
+                        </then>
+                        <else>
+                            <if expression="prin &gt;= 50000 and prin &lt;= 100000 and matur = 5">
+                                <then>
+                                    <assign variable="intrate" expression="0.04"/>
+                                </then>
+                                <else>
+                                    <assign variable="intrate" expression="0.02"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="frstint" expression="prin * intrate"/>
+            <output expression="&quot;The principle is &quot; &amp; prin" newline="True"/>
+            <output expression="&quot;The interest rate is &quot; &amp; intrate" newline="True"/>
+            <output expression="&quot;The interest amount for first year &quot; &amp; frstint" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
