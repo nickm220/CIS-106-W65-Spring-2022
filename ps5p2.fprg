@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-24 01:33:40 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMjQ7MDE6Mjk6MDcgUE07Mjg1Ng=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMjQ7MDE6MzM6NDAgUE07MTsyOTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startv" type="Integer" array="False" size=""/>
+            <declare name="stopv" type="Integer" array="False" size=""/>
+            <declare name="incrv" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a start value&quot;" newline="True"/>
+            <input variable="startv"/>
+            <output expression="&quot;Enter stop value&quot;" newline="True"/>
+            <input variable="stopv"/>
+            <output expression="&quot;Enter increment value&quot;" newline="True"/>
+            <input variable="incrv"/>
+            <while expression="startv &lt;= stopv">
+                <output expression="&quot;Loop - start value &quot; &amp; startv" newline="True"/>
+                <assign variable="startv" expression="startv + incrv"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
