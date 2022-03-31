@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="moffa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-29 02:22:18 PM"/>
+        <attribute name="created" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMjk7MDI6MTI6MDYgUE07Mjg1Mw=="/>
+        <attribute name="edited" value="bW9mZmE7REVTS1RPUC1PT1ZQMTA1OzIwMjItMDMtMjk7MDI6MjI6MTggUE07MTsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="hits" type="Real" array="False" size=""/>
+            <declare name="bats" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter player last name&quot;" newline="True"/>
+            <input variable="lname"/>
+            <output expression="&quot;Enter number of hits&quot;" newline="True"/>
+            <input variable="hits"/>
+            <output expression="&quot;Enter at bats&quot;" newline="True"/>
+            <input variable="bats"/>
+            <call expression="battingavg(hits, bats)"/>
+            <assign variable="avg" expression="battingavg(hits,bats)"/>
+            <output expression="&quot;Last name &quot; &amp; lname" newline="True"/>
+            <output expression="&quot;Batting average is &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+    <function name="battingavg" type="Real" variable="avg">
+        <parameters>
+            <parameter name="hits" type="Real" array="False"/>
+            <parameter name="bats" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="avg" expression="hits/bats"/>
+        </body>
+    </function>
+</flowgorithm>
